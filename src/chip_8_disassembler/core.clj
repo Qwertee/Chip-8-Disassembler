@@ -17,16 +17,19 @@
 
 (defn handle-0x0
   [instr]
-  (let [nibbles (get-nibbles (second instr))]
-    (if (= 0xE (:left nibbles))
-      (if (= 0xE (:right nibbles))
-            "RET"
-            "CLS")
-      "SYS")))
+  (if (= 0xE (:y instr))
+    (if (= 0xE (:n instr))
+      "RET"
+      "CLS")
+    "SYS"))
 
 (defn handle-0x1
   [instr]
-  )
+  (format-12-bits instr "JP"))
+
+(defn handle-0x2
+  [instr]
+  (format-12-bits instr "CALL"))
 
 (defn handle-instruction
   [instr]

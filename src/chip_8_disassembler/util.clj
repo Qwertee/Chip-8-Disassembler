@@ -16,9 +16,33 @@
   (let [path (Paths/get (URI. (str "file:///" filename)))]
     (Files/readAllBytes path)))
 
-(defn get-instructions [arr] (partition 2 2 arr))
+(defn parse-instruction
+  [instr]
+  (let [left-byte (first instr)
+        right-byte (second instr)]
+    {:left-byte  left-byte
+     :right-byte right-byte
+     :id         (left-nibble left-byte)
+     :x          (right-nibble left-byte)
+     :y          (left-nibble right-byte)
+     :n          (right-nibble right-byte)}))
+
+(defn get-instructions [arr] (map parse-instruction (partition 2 2 arr)))
+
+
 
 (defn get-nibbles
   [b]
   {:left (left-nibble b)
    :right (right-nibble b)})
+
+(defn combine-nibbles
+  [& nibbles]
+  (reduce (fn [accumulator x]
+            (bit-or x (bit-shift-left accumulator 4))) 0x0 nibbles))
+
+(defn format-12-bits
+  [instr message]
+    (format "%s 0x%X" message (combine-nibbles (:right (get-nibbles (first  instr)))
+                                               (:left  (get-nibbles (second instr)))
+                                               (:right (get-nibbles (second instr))))))
