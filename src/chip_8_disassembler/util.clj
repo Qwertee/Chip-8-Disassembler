@@ -17,9 +17,9 @@
     (Files/readAllBytes path)))
 
 (defn parse-instruction
-  [instr]
-  (let [left-byte (first instr)
-        right-byte (second instr)]
+  [instr-bytes]
+  (let [left-byte (first instr-bytes)
+        right-byte (second instr-bytes)]
     {:left-byte  left-byte
      :right-byte right-byte
      :id         (left-nibble left-byte)
@@ -37,12 +37,14 @@
    :right (right-nibble b)})
 
 (defn combine-nibbles
+  "Combines the passed nibbles together to form a single value. The most significant nibble
+  (The one that should end up in the leftmost position) should be passed first"
   [& nibbles]
   (reduce (fn [accumulator x]
             (bit-or x (bit-shift-left accumulator 4))) 0x0 nibbles))
 
 (defn format-12-bits
   [instr message]
-    (format "%s 0x%X" message (combine-nibbles (:right (get-nibbles (first  instr)))
-                                               (:left  (get-nibbles (second instr)))
-                                               (:right (get-nibbles (second instr))))))
+  (format "%s 0x%X" message (combine-nibbles (:x instr)
+                                             (:y instr)
+                                             (:n instr))))
