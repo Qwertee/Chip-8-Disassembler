@@ -29,8 +29,6 @@
 
 (defn get-instructions [arr] (map parse-instruction (partition 2 2 arr)))
 
-
-
 (defn get-nibbles
   [b]
   {:left (left-nibble b)

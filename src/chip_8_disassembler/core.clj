@@ -2,12 +2,10 @@
   (:require [chip-8-disassembler.util :refer :all])
   (:gen-class))
 
-
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
   (println "Hello, World!"))
-
 
 (def file-contents (read-file-as-bytes "/home/jon/code/cplusplus/Chip8Emulator/games/PONG"))
 
@@ -50,6 +48,7 @@
       0xB (format "JP V0, 0x%X" (combine-nibbles (:x instr)
                                                  (:y instr)
                                                  (:n instr)))
+
       0xC (format "RND V%X, byte ; set to rand byte AND 0x%X" (:x instr) (:right-byte instr))
 
       0xD (format "DRW V%X, V%X, 0x%X" (:x instr) (:y instr) (:n instr))

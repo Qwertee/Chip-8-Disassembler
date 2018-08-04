@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="838951e5-b00d-4db0-9383-166cb7f4263f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/chip_8_disassembler/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/chip_8_disassembler/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chip_8_disassembler/util.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/chip_8_disassembler/util.clj" afterDir="false" />
-    </list>
+    <list default="true" id="838951e5-b00d-4db0-9383-166cb7f4263f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +14,8 @@
       <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chip_8_disassembler/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="92" lean-forward="true" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chip_8_disassembler/util.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="40" column="79" lean-forward="true" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
+            <state relative-caret-position="582">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -119,14 +107,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="cursive.last.file.extension./home/jon/code/clojure/chip-8-disassembler/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/project.clj" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="ReplState" timestamp="1533271812475">{:repl-history {:ide [], :local [{:command &quot;(read-file-as-bytes \&quot;file\&quot;)&quot;, :offset 27, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)&quot;, :offset 72, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(nth\n  (read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)\n  0)&quot;, :offset 84, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(bytes\n  (nth\n    (read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)\n    0))&quot;, :offset 98, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(file-contents)&quot;, :offset 14, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(partition 2 2 file-contents)&quot;, :offset 28, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(bit-and 0x6A 0xF0)&quot;, :offset 18, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(unsigned-bit-shift-right (bit-and 0x6A 0xF0))&quot;, :offset 44, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(unsigned-bit-shift-right (bit-and 0x6A 0xF0) 4)&quot;, :offset 47, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(right-nibble 0x6A)&quot;, :offset 18, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(left-nibble 0x6A)&quot;, :offset 5, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(def instrs (get-instructions file-contents))&quot;, :offset 43, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(first (first instrs) )&quot;, :offset 23, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(left-nibble (first (first instrs)))&quot;, :offset 12, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(right-nibble (first (first instrs)))&quot;, :offset 6, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(0xFF)&quot;, :offset 5, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;0xFF&quot;, :offset 4, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(byte 0xFF)&quot;, :offset 10, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(fn []\n  (if true (println \&quot;true!\&quot;))\n  (if true (println \&quot;also true!\&quot;)))&quot;, :offset 68, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;((fn []\n   (if true (println \&quot;true!\&quot;))\n   (if true (println \&quot;also true!\&quot;))))&quot;, :offset 1, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 a)&quot;, :offset 13, :ns &quot;chip-8-disassembler.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1533272306501">{:repl-history {:ide [], :local [{:command &quot;(read-file-as-bytes \&quot;file\&quot;)&quot;, :offset 27, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(nth\n  (read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)\n  0)&quot;, :offset 84, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(bytes\n  (nth\n    (read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)\n    0))&quot;, :offset 98, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(partition 2 2 file-contents)&quot;, :offset 28, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(bit-and 0x6A 0xF0)&quot;, :offset 18, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(unsigned-bit-shift-right (bit-and 0x6A 0xF0))&quot;, :offset 44, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(unsigned-bit-shift-right (bit-and 0x6A 0xF0) 4)&quot;, :offset 47, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(right-nibble 0x6A)&quot;, :offset 18, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(left-nibble 0x6A)&quot;, :offset 5, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(def instrs (get-instructions file-contents))&quot;, :offset 43, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(first (first instrs) )&quot;, :offset 23, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(left-nibble (first (first instrs)))&quot;, :offset 12, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(right-nibble (first (first instrs)))&quot;, :offset 6, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(0xFF)&quot;, :offset 5, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;0xFF&quot;, :offset 4, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(byte 0xFF)&quot;, :offset 10, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(fn []\n  (if true (println \&quot;true!\&quot;))\n  (if true (println \&quot;also true!\&quot;)))&quot;, :offset 68, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;((fn []\n   (if true (println \&quot;true!\&quot;))\n   (if true (println \&quot;also true!\&quot;))))&quot;, :offset 1, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 a)&quot;, :offset 13, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 (0x00 0x00))&quot;, :offset 22, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 '(0x00 0x00))&quot;, :offset 13, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 '(0x00 0xE0))&quot;, :offset 22, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 '(0x00 0xEE))&quot;, :offset 23, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(get-nibbles)&quot;, :offset 12, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(get-nibbles 0xAB)&quot;, :offset 17, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(bytes 0x11 0x33)&quot;, :offset 16, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(get-instructions (file-contents \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;))&quot;, :offset 83, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(pprint (get-instructions (file-contents \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)))&quot;, :offset 8, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(file-contents \&quot;/home/jon/code/cplusplus/Chip8Emulator/games\&quot;)&quot;, :offset 60, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(file-contents \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)&quot;, :offset 65, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;)&quot;, :offset 70, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(get-instructions (read-file-as-bytes \&quot;/home/jon/code/cplusplus/Chip8Emulator/games/PONG\&quot;))&quot;, :offset 17, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-instruction '(0x00 0x00))&quot;, :offset 31, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-instruction '(0x00 0xE0))&quot;, :offset 30, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x1 0x1FFF)&quot;, :offset 18, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(bit-shift-left 0xF 8)&quot;, :offset 21, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x1 '(0x1F 0xFF))&quot;, :offset 23, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x2 '(0x1F 0xFF))&quot;, :offset 11, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(combine-nibbles)&quot;, :offset 16, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(combine-nibbles 0x1)&quot;, :offset 20, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(combine-nibbles 0x1 0x1)&quot;, :offset 24, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(format \&quot;0x%X\&quot; (combine-nibbles 0x1 0x1))&quot;, :offset 39, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(format \&quot;0x%X\&quot; (combine-nibbles 0x1 0x1 0xF))&quot;, :offset 43, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(format \&quot;0x%X\&quot; (combine-nibbles 0x1 0x1 0xF 0xA))&quot;, :offset 47, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(format-12-bits '(0x12 0x34))&quot;, :offset 27, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(format-12-bits '(0x12 0x34) \&quot;TEST\&quot;)&quot;, :offset 34, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(parse-instruction file-contents)&quot;, :offset 32, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(parse-instruction (file-contents))&quot;, :offset 33, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 (parse-instruction '(0x00 0x00)))&quot;, :offset 42, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 (parse-instruction '(0x00 0xe0)))&quot;, :offset 41, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x0 (parse-instruction '(0x00 0xee)))&quot;, :offset 42, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(parse-instruction '(0x12 0x34))&quot;, :offset 30, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(file-contents)&quot;, :offset 14, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(pprint (file-contents))&quot;, :offset 9, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;file-contents&quot;, :offset 13, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(pprint file-contents)&quot;, :offset 8, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-0x3 (parse-instruction '(0x34 0x56)))&quot;, :offset 42, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-instruction (first (get-instructions file-contents)))&quot;, :offset 58, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-instruction (second (get-instructions file-contents)))&quot;, :offset 27, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(handle-instruction (nth (get-instructions file-contents) 20))&quot;, :offset 60, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(map handle-instruction (get-instructions file-contents))&quot;, :offset 55, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(get-instructions file-contents)&quot;, :offset 31, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(first (get-instructions file-contents))&quot;, :offset 6, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(str :UNKNOWN)&quot;, :offset 13, :ns &quot;chip-8-disassembler.core&quot;} {:command &quot;(disassemble (get-instructions file-contents))&quot;, :offset 46, :ns &quot;chip-8-disassembler.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -205,7 +194,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="2560" height="1412" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -214,14 +202,14 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="right" id="REPL" side_tool="true" visible="true" weight="0.3296875" />
+      <window_info anchor="right" id="REPL" side_tool="true" weight="0.45234376" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="right" id="Leiningen" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32997677" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18671875" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18671875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -278,8 +266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chip_8_disassembler/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="92" lean-forward="true" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+        <state relative-caret-position="582">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
