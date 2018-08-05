@@ -2,12 +2,17 @@
   (:require [chip-8-disassembler.util :refer :all])
   (:gen-class))
 
+
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
   (println "Hello, World!"))
 
 (def file-contents (read-file-as-bytes "/home/jon/code/cplusplus/Chip8Emulator/games/PONG"))
+
+(defn unknown-instr
+  [instr]
+  (println (format "ERROR: unknown instruction specified: %X%X" (:left-byte instr) (:right-byte instr))))
 
 (defn handle-0x0
   [instr]
@@ -16,6 +21,31 @@
       "RET"
       "CLS")
     "SYS"))
+
+(defn handle-0x8
+  [instr]
+  (let [x (:x instr)
+        y (:y instr)]
+    (case (:n instr)
+      0x0 (format "LD V%X, V%X" x y)
+
+      0x1 (format "OR V%X, V%X" x y)
+
+      0x2 (format "AND V%X, V%X" x y)
+
+      0x3 (format "XOR V%X, V%X" x y)
+
+      0x4 (format "ADD V%X, V%X" x y)
+
+      0x5 (format "SUB V%X, V%X" x y)
+
+      0x6 (format "SHR V%X {, V%X} ; VF <- 1 if lsb lf V%X is 1" x y x)
+
+      0x7 (format "SUBN V%X, V%X" x y)
+
+      0xE (format "SHL V%X {, V%X} ; VF <- 1 if msb lf V%X is 1" x y x)
+
+      (unknown-instr instr))))
 
 (defn handle-instruction
   [instr]
