@@ -1,7 +1,7 @@
 # chip-8-disassembler
 
 Simple disassembler for the Chip-8 architecture.
-Pass it a binary file for the Chip-8 system, and this will output a much more readble assembly file.
+Pass it a binary file for the Chip-8 system, and this will output a much more readable assembly file.
 Currently does not support Super Chip-48 instructions.
 
 ## Installation
