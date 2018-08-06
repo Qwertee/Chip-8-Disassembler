@@ -29,7 +29,6 @@ Will eventually support the ability to specify an output file.
 
 ## License
 
-Copyright © 2018 - Jon
+Copyright © 2018 - Jon Berrend
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the MIT License.
