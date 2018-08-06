@@ -1,36 +1,35 @@
 # chip-8-disassembler
 
-FIXME: description
+Simple disassembler for the Chip-8 architecture.
+Pass it a binary file for the Chip-8 system, and this will output a much more readble assembly file.
+Currently does not support Super Chip-48 instructions.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Make sure that you have leiningen installed.
+
+Clone this repo: https://github.com/Qwertee/Chip-8-Disassembler
+
+Run
+
+    $ lein bin
+
+to pull all dependencies and build a self-contained executable within the 
+`target/default` directory.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar chip-8-disassembler-0.1.0-standalone.jar [args]
+    $ ./target/default/chip8d [PATH_TO_BIN]
+    
+Will write the disassembled contents of the specified file to `output.asm` within the current directory.
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Will eventually support the ability to specify an output file.
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 - Jon
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
